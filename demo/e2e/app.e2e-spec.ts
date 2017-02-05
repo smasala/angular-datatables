@@ -1,10 +1,10 @@
-import { DemoPage } from './app.po';
+import { AngularDatatablesDemoPage } from './app.po';
 
-describe('demo App', function() {
-  let page: DemoPage;
+describe('angular-datatables-demo App', function() {
+  let page: AngularDatatablesDemoPage;
 
   beforeEach(() => {
-    page = new DemoPage();
+    page = new AngularDatatablesDemoPage();
   });
 
   it('should display message saying app works', () => {
