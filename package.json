@@ -12,7 +12,7 @@
     "move": "mkdir dist && mv src/*.d.ts dist && mv src/*.js dist && mv src/*.map dist",
     "rm-spec": "rm -f dist/*.spec.*",
     "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
-    "tsc": "tsc",
+    "tsc": "tsc -p src",
     "tsc:w": "tsc -w",
     "build": "rm -rf dist/ && npm run lint && npm run tsc && npm run move && npm run rm-spec"
   },
@@ -43,6 +43,7 @@
     "zone.js": "~0.7.6"
   },
   "devDependencies": {
+    "@angular/compiler-cli": "2.4.6",
     "@types/jasmine": "~2.5.41",
     "@types/node": "~7.0.5",
     "canonical-path": "0.0.2",

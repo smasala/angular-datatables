@@ -3,7 +3,10 @@
     "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "lib": ["es6", "dom"],
+    "lib": [
+      "es6",
+      "dom"
+    ],
     "module": "es6",
     "moduleResolution": "node",
     "noImplicitAny": true,
@@ -19,5 +22,9 @@
     "src/angular-datatables.ts",
     "src/angular-datatables.directive.ts",
     "src/angular-datatables.directive.spec.ts"
-  ]
+  ],
+  "angularCompilerOptions": {
+    "genDir": "dist",
+    "debug": true
+  }
 }
